@@ -15,4 +15,15 @@ But what of ordering of code?
 
 One line of code changes the possibilities for the next line of code.
 
-What if the reverse mapping?
+What if the reverse mapping? From desired output to source data.
+
+How do you move toward an answer with the intermediately generated code?
+
+Transform the shape of the input data to the destination data
+
+Join on all the fields of objects
+
+Rule recognition if the pattern is the same for all joins.
+
+If not there is some other property.
+
