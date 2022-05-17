@@ -3,7 +3,7 @@ Can we generate sourcecode for algorithms automatically?
 
 # a star algorithm
 
-A star algorithm is kind of intelligent as it uses a cost function and a heuristic.
+A star algorithm is kind of intelligent, it uses a cost function and a heuristic.
 
 What is the cost function for lines of code? That get nearer to the output values?
 
@@ -14,6 +14,8 @@ We move the inputs the lines of code to change the output movement.
 But what of ordering of code?
 
 One line of code changes the possibilities for the next line of code.
+
+The neighbours of the current code are the possibilities of the current line of code.
 
 What if the reverse mapping? From desired output to source data.
 
