@@ -29,3 +29,13 @@ Rule recognition if the pattern is the same for all joins.
 
 If not there is some other property.
 
+Could have a set of primitives: create new object, create recursive call, loop
+
+Then when the structure of the input data matches output data you need to find the conditions to get to the output structure.
+
+The distance function needs to compare the input data structure to the candidate data structure.
+
+But without brute forcing how do you search an opportunity in depth. You need intelligence to go in a direction
+
+
+
