@@ -261,3 +261,12 @@ if len(t.children) > 3 { replace(t, Node(value=t.children÷(point=middle=m) = m.
 else once t.children.append(node)
 )
 ```
+
+How do we get nearer to the output?
+
+Each matched function should produce output that is nearer in structure
+To the output.
+
+Combine functions together arbitrarily.
+Relationships of input data.
+
