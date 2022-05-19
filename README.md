@@ -218,7 +218,12 @@ Search node1.children node3
 = Node3
 Due to
 Node3 index 3
-Node1.children recursive( initialValue(node1.children, s)÷(point=middle=m,sides=s) value(m) == input = output if value(m) > searchValue then s=s[0] else s=s[1])
+
+
+Binary search in one line of code
+```
+recursive( initialValue(node1.children, s)÷(point=middle=m,sides=s) value(m) == input = output if value(m) > searchValue then s=s[0] else s=s[1])
+```
 
 Node.3.children 
 
