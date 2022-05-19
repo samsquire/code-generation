@@ -190,4 +190,62 @@ Match patterns in example input to output structure.
 
 Base rules. Algebraic transformations that can be applied over input data.
 
-Equivalencies.
+Algebraic Equivalencies of triples 
+
+Dueto means provide a reasoning why the triple matches the algebraic pattern.
+
+One pattern can infer multiple other triples regarding the data structure 
+
+Triples can represent most data structures.
+
+Loops
+
+Binary search pattern.
+
+Input data
+
+Node1 children node2
+Node2 index 0
+Node1 children node3
+Node3 index 1
+Node1 children node4
+Node4 index 2
+Node1 isSorted children
+Node1 children node5
+Node5 index 3
+
+Search node1.children node3
+= Node3
+Due to
+Node3 index 3
+Node1.children recursive( initialValue(node1.children, s)÷(point=middle=m,sides=s) value(m) == input = output if value(m) > searchValue then s=s[0] else s=s[1])
+
+Node.3.children 
+
+Search node4
+= Node4
+
+Serialize python code as triples and as nested trees
+Track variable mutation
+Tree search
+Tree transformation
+Loops
+
+Truth maintenance?
+
+When examples exclude a search result that proves something false we need to retract the solution and algorithm fragments found
+
+
+Patterns
+
+While current != None:
+  Body
+  current = current.parent
+
+Patch why due to
+
+Patch finds loops
+Nested tree patch
+
+
+
