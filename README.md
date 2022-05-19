@@ -247,5 +247,12 @@ Patch why due to
 Patch finds loops
 Nested tree patch
 
-
-
+B tree in one line of code
+```
+insert t node = recursive_deepest_first(items=t.children,item=t, lastRecursion=l)(
+location = reversed(t.children).find(item=i, item.value >= node.value)
+insert location node
+if len(t.children) > 3 { replace(t, Node(value=t.children÷(point=middle=m) = m.value,children.sort(item=i,sortKey=i.value)=t) output = l.t }
+else once t.children.append(node)
+)
+```
