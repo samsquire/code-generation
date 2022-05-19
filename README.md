@@ -183,3 +183,11 @@ I thought we can randomly generate condition statements for each input object.
 Walk the patch and insert condition objects.
 
 It's a graph transformation problem
+
+# dueto and structure algebra idea
+
+Match patterns in example input to output structure.
+
+Base rules. Algebraic transformations that can be applied over input data.
+
+Equivalencies.
