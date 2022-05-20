@@ -277,7 +277,7 @@ tsp cities = {
 (array(name=pairs)=cities
 .permutations(name=pair, 2))
 .permutations(name=solution, previous=s[i][1], size=len(cities), value+=(solution[-1][1], solution[0][0]))
-thread(solution, rule(index, item)=(if item[i][0]==item[i-1][1] item[i][0], item[i][1]))
+thread(solution, rule(index, item)=(if item[i][0]==item[i-1][1] then item[i][0] else reject, item[i][1]))
 euclidean_distance(name=distance, pair[0], pair[1])
 euclidean_distance(name=solution_distance, solution)
 sort(name=per_order, distance, order=ascending)
