@@ -274,7 +274,9 @@ Travelling salesman problem
 
 ```
 tsp cities = {
-(array(name=pairs)=cities.permutations(name=pair, 2)).permutations(name=solution, len(cities))
+(array(name=pairs)=cities
+.permutations(name=pair, 2))
+.permutations(name=solution, len(cities), value+=(solution[-1][1], solution[0][0]))
 euclidean_distance(name=distance, pair[0], pair[1])
 euclidean_distance(name=solution_distance, solution)
 sort(name=per_order, distance, order=ascending)
