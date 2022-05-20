@@ -280,5 +280,6 @@ euclidean_distance(name=solution_distance, solution)
 sort(name=per_order, distance, order=ascending)
 sort(name=solution_order, solution_distance, order=ascending)
 pairs = first(per_order, solution_order)
+= pairs
 }
 ```
