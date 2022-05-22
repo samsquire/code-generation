@@ -359,3 +359,14 @@ Need to know where the cut points of loops where we can insert concurrent stackf
 Recursion - access to recursive stackframes. such as last
 
 Only 
+
+# heuristics
+
+What does generic code look like? What's it's shape
+Can we use shapes to identify heuristics of fitness of things to try before other things?
+Share intermediate values try achieve a sequence.
+
+
+ * Use a variable created in a loop
+ * + 1 - 1 in arguments on loop.
+ * 
