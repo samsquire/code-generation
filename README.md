@@ -301,6 +301,14 @@ pairs = first(per_order, solution_order)
 # a star algorithm
 
 ```
+insert index priorityQueue value = {
+recursive( initialValue(priorityQueue, s)
+÷(point=middle=m,sides=s)
+size = len(s) if size == 0 then s.insert(value)
+if index[str(m)] >  then s=s[0] else s=s[1]
+)
+}
+
 neighbours node =
 = neighbours = [(node[0] + 1, node[1]),
 (node[0], node[1] + 1),
@@ -311,15 +319,30 @@ neighbours node =
 (node[0] + 1, node[1] - 1),
 (node[0] - 1, node[1] + 1)
 ]
-astar map start target = {
-gScore = {}
-OpenSet = [start]
-recursive(OpenSet,
-recursive(neighbours, item=i
-euclidean_range(name=range, i, target)
+path ComeFrom target = {
+= path ComeFrom (ComeFrom.get(str(target)) or reject)
+}
 
-)
-)
+astar map start target heuristic = {
+gScore = {}
+fScore = {}
+ComeFrom = {}
+gScore[str(start)] = 0
+fScore[str(start)] = euclidean_distance(start, target)
+OpenSet = [start]
+recursive(OpenSet, item=current,
+OpenSet.remove(0)
+neighbours(current), item=neighbour {
+euclidean_range(name=range, current, neighbour)
+if str(current) == str(target) then = path ComeFrom target
+tentative_gScore = gScore[str(current)] + range
+if tentative_gScore < gScore[current] then {
+  if neighbour not in OpenSet then insert fScore OpenSet neighbour
+  ComeFrom[neighbour] = current
+  gScore[str(neighbour)] = tentative_gScore
+  fScore[str(neighbour)] = tentative_gScore + heuristic(neighbour) 
+}
+})
 }
 ```
 
