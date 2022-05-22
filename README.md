@@ -305,7 +305,7 @@ insert index priorityQueue value = {
 recursive( initialValue(priorityQueue, s)
 ÷(point=middle=m,sides=s)
 size = len(s) if size == 0 then s.insert(value)
-if index[str(m)] >  then s=s[0] else s=s[1]
+if index[str(value)] < index[str(m)] then s=s[0] else s=s[1]
 )
 }
 
