@@ -298,6 +298,31 @@ pairs = first(per_order, solution_order)
 }
 ```
 
+# a star algorithm
+
+```
+neighbours node =
+= neighbours = [(node[0] + 1, node[1]),
+(node[0], node[1] + 1),
+(node[0] - 1, node[1]),
+(node[0], node[1] - 1),
+(node[0] + 1, node[1] + 1),
+(node[0] - 1, node[1] - 1),
+(node[0] + 1, node[1] - 1),
+(node[0] - 1, node[1] + 1)
+]
+astar map start target = {
+gScore = {}
+OpenSet = [start]
+recursive(OpenSet,
+recursive(neighbours, item=i
+euclidean_range(name=range, i, target)
+
+)
+)
+}
+```
+
 # how to execute this algrebralang
 
 Parse example built in loops
