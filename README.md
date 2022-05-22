@@ -386,6 +386,33 @@ map(replace=#a.input, i=i {
 = "{}: {}".format(datetime.now(), i)
 })
 ```
+
+## weaving
+
+If you have a complicated call hierarchy you need some method of referring to intermediate method call parameters.
+
+You might want access to the above mapped input as well as the log line.
+
+```
+[ 1, 2, 3] = input
+function1(name=a, input)
+function2(name=b, a)
+function3(name=c, b)
+```
+
+How do I access the inputs to function1, function2, function3 for the history of c?
+
+```
+[ 1, 2, 3] = input
+function1#fa(name=a, input, field1=3)
+function2#fb(name=b, a)
+function3#fc(name=c, b)
+function4#fd(name=d,
+  parameter1=a.function.input,
+  parameter2=#a.field1,
+  parameter3=a@c, c)
+```
+
 # heuristics
 
 What does generic code look like? What's it's shape
