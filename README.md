@@ -260,7 +260,8 @@ Nested tree patch
 
 B tree in one line of code
 ```
-insert t node = recursive_deepest_first(items=t.children,item=t, lastRecursion=l)(
+insert t node = recursive_deepest_first(items=t.children,item=t,
+lastRecursion=l)(
 if len(t.children) == 0 t.activate()
 location = reversed(t.children).find(item=i, item.value >= node.value)
 output = insert t node
