@@ -358,7 +358,21 @@ Need to know where the cut points of loops where we can insert concurrent stackf
 
 Recursion - access to recursive stackframes. such as last
 
-Only 
+# extensibility
+
+The benefit to algrebralang is that any pipeline of functions can be tapped.
+
+I should be capable of labelling a pipeline with a hash symbol
+
+For example, 
+
+```
+sort#a(name=sorted, data)
+log(name=presorted, input=#a.input)
+log(name=postsorted, input=#a.output)
+```
+
+This allows sourcecode to be incredibly flexible.
 
 # heuristics
 
