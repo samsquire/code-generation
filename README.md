@@ -383,4 +383,7 @@ Share intermediate values try achieve a sequence.
 
  * Use a variable created in a loop
  * + 1 - 1 in arguments on loop.
- * 
+ * Metadata of each layer
+ * Guide computer into coming up with the correct code 
+
+The computer shall never guess to divide by two or multiply by a factor so we need to provide operators of what the data should look similar to 
