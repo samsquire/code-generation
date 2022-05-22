@@ -331,8 +331,8 @@ gScore[str(start)] = 0
 fScore[str(start)] = heuristic(start)
 OpenSet = [start]
 recursive(OpenSet, item=current,
-OpenSet.remove(0)
 neighbours(current), item=neighbour {
+OpenSet.remove(0)
 euclidean_range(name=range, current, neighbour)
 if str(current) == str(target) then = path ComeFrom target
 tentative_gScore = gScore[str(current)] + range
