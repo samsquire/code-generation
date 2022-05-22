@@ -221,8 +221,14 @@ Node3 index 3
 
 
 Binary search in one line of code
+
 ```
-recursive( initialValue(node1.children, s)÷(point=middle=m,sides=s) value(m) == input = output if value(m) > searchValue then s=s[0] else s=s[1])
+recursive( initialValue(node1.children, s)
+
+÷(point=middle=m,sides=s)
+value(m) == input = output
+if value(m) > searchValue then s=s[0] else s=s[1]
+)
 ```
 
 Node.3.children 
@@ -257,7 +263,10 @@ B tree in one line of code
 insert t node = recursive_deepest_first(items=t.children,item=t, lastRecursion=l)(
 location = reversed(t.children).find(item=i, item.value >= node.value)
 insert location node
-if len(t.children) > 3 { replace(t, Node(value=t.children÷(point=middle=m) = m.value,children.sort(item=i,sortKey=i.value)=t) output = l.t }
+if len(t.children) > 3 {
+replace(t, Node(value=t.children÷(point=middle=m) 
+= m.value,children.sort(item=i,sortKey=i.value)=t) 
+output = l.t }
 else once t.children.append(node)
 )
 ```
@@ -286,3 +295,17 @@ pairs = first(per_order, solution_order)
 = pairs
 }
 ```
+
+# how to execute this algrebralang
+
+Parse example built in loops
+
+Need to generate loops, and interleave them.
+
+Need to topological sort of the variables.
+
+Need to know where the cut points of loops where we can insert concurrent stackframes
+
+Recursion - access to recursive stackframes. such as last
+
+Only 
