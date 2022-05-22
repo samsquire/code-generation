@@ -408,9 +408,9 @@ function1#fa(name=a, input, field1=3)
 function2#fb(name=b, a)
 function3#fc(name=c, b)
 function4#fd(name=d,
-  parameter1=a.function.input,
-  parameter2=#a.field1,
-  parameter3=a@c, c)
+  parameter1=a.function.input@c, # what was A's output stream's input for this c
+  parameter2=#fa.field1@c, # access the call parameters of function fa
+  parameter3=a@c, c) # access the a for c
 ```
 
 # heuristics
