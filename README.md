@@ -328,7 +328,7 @@ gScore = {}
 fScore = {}
 ComeFrom = {}
 gScore[str(start)] = 0
-fScore[str(start)] = euclidean_distance(start, target)
+fScore[str(start)] = heuristic(start)
 OpenSet = [start]
 recursive(OpenSet, item=current,
 OpenSet.remove(0)
