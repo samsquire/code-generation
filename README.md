@@ -374,6 +374,18 @@ log(name=postsorted, input=#a.output)
 
 This allows sourcecode to be incredibly flexible.
 
+Should be capable of extending extended code. What if someone wants to extend those logs even more?
+
+I want to put something before the input to log
+
+```
+sort#a(name=sorted, data)
+log(name=presorted, input=#a.input)
+log(name=postsorted, input=#a.output)
+map(replace=#a.input, i=i {
+= "{}: {}".format(datetime.now(), i)
+})
+```
 # heuristics
 
 What does generic code look like? What's it's shape
