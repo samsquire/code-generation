@@ -451,6 +451,10 @@ After we've topological sorted the data pipeline we need to identify parallelize
 
 We can enrich data that passes through the pipeline to include information of the other nodes on the path 
 
+Create a library that provides call histories and stackframes.
+
+# call histories
+
 ```
 function1#fa(name=a, input)
 function2#fb(name=left, a)
