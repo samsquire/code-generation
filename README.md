@@ -445,6 +445,32 @@ merge(target=login request, {
 
 Loop merging.
 
+# generating sequential code
+
+After we've topological sorted the data pipeline we need to identify parallelized graphs as data might be needed between these nodes.
+
+We can enrich data that passes through the pipeline to include information of the other nodes on the path 
+
+```
+function1#fa(name=a, input)
+function2#fb(name=left, a)
+function3#fc(name=right, a)
+function4(name=final, left, right) 
+```
+
+How does function4 associate the inputs from left and right?
+
+function4 left right = {
+recursive(l, r = zip(left, right) {
+log(l@function1.value) # print the output of the function1(a)
+log(r@function3.value) # print the output of function3(a)
+})
+}
+ 
+This should be a zero cost abstraction.
+
+If you want history tracking, you need to keep in memory the calls to function1 and function3 or enrich the data along the pipeline.
+
 
 
 # heuristics
