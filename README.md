@@ -413,6 +413,40 @@ function4#fd(name=d,
   parameter3=a@c, c) # access the a for c
 ```
 
+# parallel replacement extension circuits
+
+Sometimes we want to extend code that is running fine.
+
+We can write a parallel implementation using data from the existing code.
+
+So the behaviour largely is the same but there is extensions to the behaviour.
+
+How to represent this?
+
+Write functions that use the same inputs and outputs of the code.
+
+Merge operator
+
+```
+login request = {
+  db.find(name=user_record,
+  username=request.form["username"],
+  password=sha256.hash(request.form.password["password"])
+if user_record != None: # successful_login
+ = redirect("/feed")
+}
+merge(target=login request, {
+ around # successful_login {
+   log("{} successfully logged in".format(user_record["username"]))
+ }
+})
+```
+
+
+Loop merging.
+
+
+
 # heuristics
 
 What does generic code look like? What's it's shape
