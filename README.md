@@ -386,6 +386,13 @@ map(replace=#a.input, i=i {
 = "{}: {}".format(datetime.now(), i)
 })
 ```
+# arbitrary extension
+
+It should be possible to extend an existing piece of code infinitely without changing it.
+
+Essentially we act as patches on the original code.
+
+
 
 ## weaving
 
